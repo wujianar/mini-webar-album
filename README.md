@@ -12,7 +12,7 @@
 
 ## 1. 登录无间AR官网上传识别
 
-登录 https://www.wujianar.com，在识别图的关联信息中填入视频的播放地址，如：
+登录 [https://www.wujianar.com](https://www.wujianar.com), 在识别图的关联信息中填入视频的播放地址，如：
 ```javascript
 {"videoUrl":"https://********/1.mp4"}
 ```
@@ -23,7 +23,7 @@ https://github.com/wujianar/mini-webar
 
 ## 3. 设置认证token等
 
-从开发者中心复制认证token
+从开发中心复制认证token
 
 ```javascript
 const CONFIG = {
@@ -34,7 +34,7 @@ const CONFIG = {
 }
 ```
 
-## 4. 使用真机调用，扫描marker目录的中识别就可以播放视频
+## 4. 使用真机调试，扫描marker目录的中识别就可以播放视频
 
 ![识别](demo/1.jpg)
 
