@@ -1,0 +1,24 @@
+<camera frame-size="medium" bindinitdone="cameraInitDone" mode="normal" device-position="back" resolution="medium" flash="off" />
+
+<canvas type="2d" id="canvas" style="width:1px; height: 1px;" />
+
+<view id="action" wx:if="{{isShowScanButton}}">
+    <button wx:if="{{isShowScanButton}}" type="primary" bindtap="scan">点击识别</button>
+</view>
+
+<view id="content" wx:if="{{isShowVideo}}">
+    <view wx:if="{{isShowVideo}}">
+        <video src="{{videoUrl}}" autoplay="true" controls="true" loop="true" style="width: 99%"></video>
+    </view>
+</view>
+
+<view id="scanLineWrap" wx:if="{{isScanning}}">
+    <image id="scanLineImage" src="/images/scan-line.png" height="2px" />
+</view>
+
+<view id="close" wx:if="{{isShowCloseButton}}" bindtap="closeVideo">
+    X
+</view>
+<view id="support">
+    技术支持：www.wujianar.com
+</view>

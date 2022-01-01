@@ -1,0 +1,78 @@
+camera {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+#canvas {
+    position: absolute;
+    left: 0;
+}
+
+#action {
+    position: absolute;
+    bottom: 40vw;
+    margin: 0 auto;
+    width: 100vw;
+    text-align:center;
+    z-index: 100;  
+}
+
+#content {
+    position: absolute;
+    margin: 10vh auto 0 auto;
+    width: 100vw;
+    height: 100vh;
+    text-align:center;
+    z-index: 100;  
+}
+
+#close {
+    position: absolute;
+    top: 2vh;
+    right: 1vh;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    z-index: 100;
+    text-align: center;
+    background: #07c160;
+    color: #FFFFFF;
+}
+
+#support {
+    position: absolute;
+    bottom: 5vw;
+    margin: 0 auto;
+    width: 100vw;
+    text-align:center;
+    z-index: 100;
+    color: #FFFFFF;
+}
+
+#scanLineWrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#scanLineImage {
+    width: 80%;
+    height: 2px;
+    animation: scan 3s infinite linear;
+    -webkit-animation: scan 3s infinite linear;
+}
+
+@keyframes scan {
+    0% {
+        margin-top: 20vh;
+    }
+    100% {
+        margin-top: 80vh;
+    }
+}
