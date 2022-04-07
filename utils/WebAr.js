@@ -32,8 +32,8 @@ export class WebAr {
             this.search(frame).then(res => {
                 this.isRunning = false;
                 // code为0时搜索到目标
-                if (res.code == 0) {
-                    callback(res.result);
+                if (res.code == 200) {
+                    callback(res.data);
                 }
             }).catch(err => {
                 this.isRunning = false;
