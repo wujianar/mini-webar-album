@@ -31,7 +31,7 @@ export class WebAr {
 
             this.search(frame).then(res => {
                 this.isRunning = false;
-                // code为0时搜索到目标
+                // code为200时搜索到目标
                 if (res.code == 200) {
                     callback(res.data);
                 }
